@@ -109,12 +109,31 @@ jquery(document).ready(function() {
 	}
 });
 });
-*/
+
+function test(){
+  var a = document.getElementById("ooo");
+  a.style.display = "none";
+  a.overflow = "hidden";
+}
+
 function test(){
 	var a = document.getElementById("signin-email");
 		var b = a.nextElementSibling;
 	if(a.value.length !=0){
-		b.display = "none" ;
-		b.overflow = "hidden" ;
+		b.style.display = "none" ;
+		//b.overflow = "hidden" ;
 	}
+}
+*/
+
+function load(){
+  var element = new Array();
+  element[0] = document.getElementById('signin-email');
+  element[1] = document.getElementById('signin-password');
+  
+  for (var i = element.length - 1; i >= 0; i--) {
+    if(element[i].value.length > 0){
+      element[i].nextElementSibling.style.display = "none";
+    }
+  };
 }

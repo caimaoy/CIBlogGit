@@ -14,4 +14,4 @@
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/my_js.js" type="text/javascript"></script>
 </head>
-<body onload="test()">
+<body onload="load()">
